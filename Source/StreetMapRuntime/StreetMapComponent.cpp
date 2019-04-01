@@ -516,7 +516,8 @@ void UStreetMapComponent::UpdateNavigationIfNeeded()
 {
 	if (bCanEverAffectNavigation || bNavigationRelevant)
 	{
-		UNavigationSystem::UpdateComponentInNavOctree(*this);
+		FNavigationSystem::UpdateComponentInNavOctree(*this);
+		//UNavigationSystem::UpdateComponentInNavOctree(*this);
 	}
 }
 
